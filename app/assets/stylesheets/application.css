@@ -1,0 +1,276 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @charset "UTF-8";
+
+body {font-family: 'メイリオ',
+      'Hiragino Kaku Gothic Pro', sans-serif}
+
+/* ページ外側余白削除 */
+body{margin: 0}
+
+/*　サイト名 */
+
+.site h1 a{color: #000000;
+           text-decoration: none}
+.site h1  {margin: 0;
+           font-size: 30px}
+.site img {border:none}
+
+/* ヘッダー */
+.boxA {padding-top: 15px;
+       padding-bottom:5px}
+
+/* ヘッダー画像 */
+.topimg  {width: 100%;
+          height: auto;
+          vertical-align: bottom}
+
+/*　ナビゲーション */
+.menu {vertical-align: center;}
+.menu ul           {margin:0;
+                    padding:0;
+                    list-style: none;}
+.menu li a          {display: block;
+                     padding: 10px 15px;
+                     color:  #000080;
+                     font-size: 15px;
+                     text-decoration: none}
+.menu li a:hover   {background-color: #eeeeee}
+
+.menu ul:after     {content: "";
+                   display: block;
+                    clear: both}
+.menu li           {float: left;
+                     width: auto;}
+.toukou            {font-weight: bold;
+                    color: red;}
+
+
+/* イントロダクション */
+.intro{
+       text-align: center;
+       vertical-align: middle;
+       height: 300px;
+       color: #fffafa;
+       background: #66ccff;
+       font-size: 30px;
+       line-height: 65px;
+       display: -webkit-flex;
+       display: flex;
+       -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+      align-items: center; /* 縦方向中央揃え */
+      -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+      justify-content: center; /* 横方向中央揃え */
+}
+
+/* BOX4 */
+.box4-1 {position: relative;
+         margin-top: 30px;
+         }
+
+/* 検索バー */
+#form1{
+position: relative;
+margin: auto;
+}
+#sbox1 {
+height: 50px;
+padding: 0 10px;
+position: absolute;
+left: 600px;
+top: 0;
+width:269px;
+border-radius:2px 0 0 2px;
+border-right:none;
+border:solid 3px #eaeaea;
+outline: 0;
+}
+#sbtn1{
+padding: 0;
+width: 70px;
+height: 50px;
+position: absolute;
+left: 900px;
+top: 0;
+border-radius:0 2px 2px 0;
+background:#7fbfff;
+color:#fff;
+border:solid 3px #eaeaea;
+border-left:none;
+font-weight:bold;
+font-size:16px;
+outline: 0;
+}
+#sbtn1:hover{
+background:#eaeaea;
+color:#7fbfff;
+}
+
+
+/* BOX5 */
+.box5{position: absolute;
+       bottom:0;
+     width:100%;
+     margin:0}
+.footer {
+  height:35px;
+  color: #fffafa;
+  background: #000080;
+  text-align: center;
+  vertical-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+ align-items: center; /* 縦方向中央揃え */
+ -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+ justify-content: center; /* 横方向中央揃え */
+  }
+.footer p{
+   text-align: center;
+}
+
+/* register　会員登録ここから */
+.box3r{width: 100%;
+       position: relative;
+       top: 30px;
+
+}
+.box3r-inner{background: #66ccff;
+       height: 550px;
+       width: 900px;
+       margin: 0 auto;
+
+
+}
+.box3r {
+  color:#fffafa;
+  text-align: center;
+}
+p.register-a{font-size: 30px;
+              }
+p.register-o{padding-top: 15px;         
+             color: #fffafa;}
+p.register-o a{color: #fffafa;
+              text-decoration: none;}
+p.register-o2 a{color: #fffafa;
+                text-decoration: none;}
+input.user_name{width: 300px;
+                  height: 40px;
+                  font-size: 20px;}
+input.user_password{width: 300px;
+                      height: 40px;
+                      font-size: 20px;}   
+input.user_password_confirmation{width: 300px;
+                        height: 40px;
+                        font-size: 20px;}  
+input.user_email{width: 300px;
+                 height: 40px;
+                 font-size: 20px;}               
+input.register-sk{width: 300px;
+                  height: 50px;
+                  font-size: 20px;}
+
+/* register  会員登録ここまで　*/
+
+/* ログインここから */
+.loginmain{width: 100%;
+  position: relative;
+ padding-bottom: 10px;}
+.loginmain p{text-align: center;}
+.loginmain-inner{background: #66ccff;
+        height: 400px;
+        width: 900px;
+        margin: 0 auto;}
+.loginmainl{color: #fffafa;
+   font-size: 30px;
+   padding-top:10px;}
+input.loginmaini{width: 300px;
+       height: 40px;
+       font-size: 20px;}
+input.loginmain1{width: 300px;
+        height: 40px;
+        font-size: 20px;}
+input.loginmainb{width: 300px;
+         height: 50px;
+         font-size: 20px;}
+p.loginmaink,p.loginmainp{font-size: 14px;
+                 }
+p.loginmaink a,p.loginmainp a{text-decoration: none;}
+p.loginmaink a:link, p.loginmainp a:link{color: #000000;}
+p.loginmaink{padding-top: 5px;}
+p.loginmainp{padding-right: 42px;}
+
+/* ログインここまで */
+
+/* ########## 768px以上 ########## */
+@media (min-width: 768px) {
+/* BOX1とBOX2を横に並べる設定 */
+
+
+.boxA:after {content: "";
+             display: block;
+             clear: both}
+.box1       {float: left;
+             width: auto}
+.box2       {float: right;
+             width: auto}
+
+}
+
+/* ########## 1190px以上 ########## */
+@media (min-width: 1190px){
+
+/* 全体の横幅を固定 */
+ .boxA-inner, .box6 {width: 1140px;
+              margin-left: auto;
+              margin-right: auto}
+}
+
+/* register  会員登録ここまで　*/
+
+/*フォーム*/
+.form{
+  text-align: center;
+  height: 180px;
+  color: #fffafa;
+  background: #66ccff;
+  font-size: 35px;
+  line-height: 65px;
+}
+
+.form-main{width: 100%;
+  position: relative;
+  padding-top: 40px;
+
+}
+.form-main p{text-align: center;
+        padding-top: 10px;}
+.form-main-inner{background: #66ccff;
+  height: 400px;
+  width: 900px;
+  margin: 0 auto;
+
+}
+input.formi{width: 300px;
+       height: 40px;
+       font-size: 20px;}
+textarea.formt{width: 300px;
+       height: 150px;
+        font-size: 20px;}
+button.forms{width: 300px;
+       height: 40px;
+        font-size:20px;}

@@ -1,0 +1,14 @@
+
+<div class="box3r">
+<div class="box3r-inner">
+<p class="register-a">会員登録</p>
+  <%= form_for(@user) do |f| %>
+  <p><%= f.text_field :name, class: "user_name",placeholder: "ユーザID"%></p>
+ 　<p><%= f.password_field :password, class: "user_password",placeholder: "パスワード"%></p>
+ 　<p><%= f.password_field :password_confirmation,class: "user_password_confirmation", placeholder: "パスワードの再確認"%></p>
+  <p><%= f.email_field :email, class: "user_email", placeholder: "メールアドレス"%></p>
+ 　<p><%= f.submit "アカウントを作成する", class: "register-sk" %></p> 
+  <p><%= link_to "会員の方はこちらへ", login_path ,class: "register-sk" %></p>
+  <% end %>  
+</div>
+</div>

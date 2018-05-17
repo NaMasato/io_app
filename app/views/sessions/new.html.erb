@@ -1,0 +1,12 @@
+<div class="loginmain">
+  <div class="loginmain-inner">
+  <p class="loginmainl">ログイン</p>
+    <%= form_for(:session, url: login_path) do |f| %>
+    <p><%= f.email_field :email, class: "loginmaini", placeholder:"ユーザーID" %></p>
+    <p><%= f.password_field :password, class: "loginmain1",placeholder:"パスワード" %></p>
+    <p><%= f.submit "ログイン", class: "loginmainb" %></p>
+        <% end %>
+
+    <p><%= link_to "会員登録がお済ではない方", signup_path %></p>
+  </div>
+</div>

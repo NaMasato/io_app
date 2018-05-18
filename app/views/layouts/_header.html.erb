@@ -9,11 +9,17 @@
 <div class="box2">
 <nav class="menu">
 <ul>
-  <li><%= link_to "アウトプットする", '#' %></li>
-  <li><%= link_to "会員登録", signup_path  %> </li>
-  <li><%= link_to "ログイン", login_path %> </li>
+  <li><%= link_to "インプット", '#' %></li>
+       <% if logged_in? %>
+  <li><%= link_to "アウトプット", '#' %></li>
+  <li><%= link_to "プロフィール", current_user %></li>
+  <li><%= link_to "設定", '#' %></li>
+　<li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+        <% else %>
+  <li><%= link_to "ログイン", login_path %></li>
+　<li><%= link_to "会員登録", signup_path  %></li>
+        <% end %>
   <li><%= link_to "お問合わせ", contact_path %> </li>
-
 </ul>
 </nav>
 </div>

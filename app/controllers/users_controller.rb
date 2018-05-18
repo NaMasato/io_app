@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def create 
     @user = User.new(user_params)
     if @user.save
+      log_in @user
       redirect_to @user
 
     else
@@ -22,5 +23,9 @@ class UsersController < ApplicationController
                                      :password_confirmation)
    end
 
+   def show
+    @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
+   end
 
 end
